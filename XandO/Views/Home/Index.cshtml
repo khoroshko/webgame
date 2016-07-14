@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TicTacToe</title>
+    <style type="text/css">
+        .title{
+            color:red;
+            text-align:  center;
+            font-size:x-large;
+        }
+
+        #textRules{
+            font-style:italic;
+            font-size:11pt;
+        }
+
+        #StartTheGame{
+            text-align:  center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="title">Rules of the game Tic Tac Toe</h1>
+        <p id="textRules">The object of Tic Tac Toe is to get three in a row.
+        You play on a three by three game board.
+        The first player is known as X and the second is O.
+        Players alternate placing Xs and Os on the game board
+        until either oppent has three in a row or all nine squares are filled.
+        </p>
+        <p id="StartTheGame">@Html.ActionLink("Start the game", "RsvpForm")</p>
+    </div>
+</body>
+</html>
